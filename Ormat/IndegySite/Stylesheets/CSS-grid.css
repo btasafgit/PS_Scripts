@@ -1,0 +1,20 @@
+﻿body {
+}
+
+.gray {
+    background-color: gray;
+    color: black;
+    border: 2px solid lightgray;
+    border-radius: 2px;
+    
+}
+.green {
+    background-color: forestgreen;
+    color: black;
+    border: 2px solid green;
+    border-radius: 2px;
+}
+.tour{
+    border: 1px solid grey;
+    
+}

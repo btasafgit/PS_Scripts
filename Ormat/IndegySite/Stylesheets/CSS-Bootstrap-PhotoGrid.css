@@ -1,0 +1,62 @@
+﻿body {
+    font-family: 'Gotham-Black', cursive;
+    src: url("../Fonts/Gotham-Black.otf") format("opentype");
+    padding-top: 70px;
+}
+.jumbotron {
+    color: #002061;
+    background-color: #001f3f;
+}
+.navbar-inverse {
+    background: #2c3e50;
+}
+
+/*****************************************/
+
+.imgContainer {
+    position: relative;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #001f3f;
+    overflow: hidden;
+    width: 100%;
+    height: 20%;
+    transition: .5s ease;
+}
+.imgContainer:hover .overlay {
+    height: 100%;
+}
+
+.fault-overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-style: rgb(167, 0, 0);
+    background-color: rgb(245, 121, 121);
+    overflow: hidden;
+    width: 100%;
+    height: 20%;
+    transition: .5s ease;
+}
+.text {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#text{
+    color: snow;
+}
