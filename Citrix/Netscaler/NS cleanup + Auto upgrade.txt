@@ -1,0 +1,23 @@
+NS cleanup + Auto upgrade
+cd /var/nsinstall/
+cd /var/tmp/support/
+cd /var/nstrace/
+cd /flash
+
+
+Install on Passive
+cd /var/nsinstall/
+mkdir build-12.1-60.19_nc_64
+tar -zxvf build-12.1-60.19_nc_64.tgz -C build-12.1-60.19_nc_64
+cd build-12.1-60.19_nc_64
+./installns
+
+force ha failover
+
+Install on curent passive (former active)
+
+cd /var/nsinstall/
+mkdir build-12.1-60.19_nc_64
+tar -zxvf build-12.1-60.19_nc_64.tgz -C build-12.1-60.19_nc_64
+cd build-12.1-60.19_nc_64
+./installns
