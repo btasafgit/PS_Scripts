@@ -1,0 +1,8 @@
+copy C:\Windows\winsxs\amd64_microsoft-windows-cleanmgr_31bf3856ad364e35_6.1.7600.16385_none_c9392808773cd7da\cleanmgr.exe C:\Windows\System32\
+copy C:\Windows\winsxs\amd64_microsoft-windows-cleanmgr.resources_31bf3856ad364e35_6.1.7600.16385_en-us_b9cb6194b257cc63\cleanmgr.exe.mui C:\Windows\System32\en-US\
+
+C:\Windows\WinSxS\amd64_microsoft-windows-cleanmgr_31bf3856ad364e35_6.3.9600.16384_none_5e02966c3182d7a7
+
+
+copy C:\Windows\WinSxS\amd64_microsoft-windows-cleanmgr_31bf3856ad364e35_6.3.9600.16384_none_5e02966c3182d7a7\cleanmgr.exe C:\Windows\System32\
+copy C:\Windows\WinSxS\amd64_microsoft-windows-cleanmgr.resources_31bf3856ad364e35_6.3.9600.16384_en-us_4e94cff86c9dcc30\cleanmgr.exe.mui C:\Windows\System32\en-US\
