@@ -1,0 +1,22 @@
+﻿Import-Module 'C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole\bin\ConfigurationManager.psd1' 
+Set-Location ISR: 
+$a = Get-CMApplication 
+#Export-CSV C:\TEMP\ORAMT-CMApplications.csv
+#Select-Object LocalizedDisplayName,SoftwareVersion,NumberOfDeployments,NumberOfDeploymentTypes,NumberOfDependentTS,DateCreated,IsDeployed 
+$obj = @()
+foreach($i in $a){
+$tmp = [xml]($i.SDMPackageXML)
+    $obj += New-Object -TypeName PSCustomObject -Property @{
+        "LocalizedDisplayName" = $i.LocalizedDisplayName
+        "SoftwareVersion" = $i.SoftwareVersion
+        "NumberOfDeployments" = $i.NumberOfDeployments
+        "NumberOfDependentTS" = $i.NumberOfDependentTS
+        "DateCreated" = $i.NumberOfDependentTS
+        "Location" = $tmp.GetElementsByTagName("Location")[0].'#text'
+    
+    } #End new Obj
+
+    
+}#end of IF
+
+$obj | export-csv C:\TEMP\ORAMT-CMApplications3.csv -NoTypeInformation -Encoding UTF8
